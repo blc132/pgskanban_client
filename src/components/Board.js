@@ -18,6 +18,7 @@ class Board extends React.Component {
             boardId: 0,
             boardData: [],
             listName: "",
+            cards: [],
         }
     }
 //wykona sie po renderze komponentu
