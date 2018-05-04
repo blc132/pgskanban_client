@@ -50,8 +50,8 @@ export default class Card extends Component {
     }
 
     onSave = () => {
-        axios.put(BASE_URL + '/card/',
-            { Id: this.props.Id, Description: document.getElementById('description').value }
+        axios.put(BASE_URL + '/card/desc/',
+            { Id: this.props.cardId, Description: document.getElementById('description').value }
         ).then(() => {
             console.log("Card desc success")
         }).catch((error) => {
